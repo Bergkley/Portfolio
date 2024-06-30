@@ -1,3 +1,4 @@
+// ANIMAÇÃO DE DIGITAÇÃO
 var typed = new Typed(".text", {
   strings: [
     "Frontend Developer",
@@ -10,7 +11,7 @@ var typed = new Typed(".text", {
   loop: true,
 });
 
-
+// ATIVAÇÃO DO MENU DE NAVEGACAO
 
 document.addEventListener("DOMContentLoaded", function() {
   const navbarLinks = document.querySelectorAll('.navbar a');
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+// TOGGLE
 
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
@@ -68,11 +69,9 @@ themeToggle.addEventListener('click', function() {
         moonIcon.style.display = 'inline-block';
     }
     
-    // Salvar preferência do usuário no localStorage
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 });
 
-// Verificar o tema preferido do usuário ao carregar a página
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
@@ -84,6 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
         moonIcon.style.display = 'inline-block';
     }
 });
+
+
+
+
+
 
 
 

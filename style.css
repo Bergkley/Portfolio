@@ -80,10 +80,10 @@ body.dark-theme {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -3px; /* Distância da linha em relação ao texto */
+  bottom: -3px; 
   width: 100%;
-  height: 2px; /* Espessura da linha */
-  background-color: #6A0DAD; /* Cor da linha */
+  height: 2px; 
+  background-color: #6A0DAD; 
 }
 
 .navbar a.active::before,
@@ -98,6 +98,7 @@ body.dark-theme {
   width: 60px; 
   height: 25px; 
   margin-left: 10px;
+  top: -5px;
 }
 
 .mode-color input {
@@ -190,7 +191,7 @@ input:checked + .slider:before {
   animation-delay: 0.7s;
 }
 .home-content h3 span {
-  color: #0ef;
+  color: blueviolet;
 }
 
 .home-content h1 {
@@ -243,7 +244,7 @@ input:checked + .slider:before {
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet;
 }
 
 .btn-box:hover {
@@ -270,7 +271,7 @@ input:checked + .slider:before {
     font-size: 60px;
 }
 .about-text h2 span {
-    color: #0ef;
+    color: blueviolet;
 }
 
 .about-text h4{
@@ -285,6 +286,37 @@ input:checked + .slider:before {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%; 
+  position: relative;
+}
+
+.icon-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+  overflow: hidden; 
+}
+
+.icon-wrapper i {
+  font-size: 30px; 
+  margin: 0 5px; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
 }
 
 /* My Services */
@@ -303,7 +335,7 @@ input:checked + .slider:before {
 }
 
 .sub-title span {
-  color:#0ef
+  color:blueviolet
 }
 
 
@@ -577,7 +609,7 @@ section{
   text-align: center;
 }
 .main-text h2 span {
-  color: #0ef;
+  color: blueviolet;
 }
 .portfolio-content{
   display: grid;
@@ -659,7 +691,7 @@ section{
   text-align: center;
 }
 .contact-text h2 span {
-  color: #0ef;
+  color: blueviolet;
 }
 .contact-text h4 {
   margin: 15px 0;
