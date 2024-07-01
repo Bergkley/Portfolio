@@ -463,82 +463,189 @@ input:checked + .slider:before {
   line-height: 1;
 }
 
+.filter-btn {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 2px solid #1572b6; 
+  background-color:transparent; 
+  color: #0ef;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px blueviolet,
+        0 0 25px blueviolet;
+}
+
+.filter-btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+.filter-btn.active {
+  background-color: white;
+  color: #000;
+}
+
 
 /* PROJETOS */
+
 .main-text {
   padding-top: 130px;
-  margin-top: 200px;
 }
-.main-text h2{
+
+.main-text h2 {
   font-size: 60px;
   line-height: 1;
   text-align: center;
+  margin-bottom: 10%;
 }
+
 .main-text h2 span {
   color: blueviolet;
 }
-.portfolio-content{
+
+.portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
-.row{
-  position: relative;
-  overflow: hidden;
+
+.card {
+  border: 5px solid transparent;
   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #012290f7;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.card hr {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: #f0f0f0;
+}
+
+.card p {
+  padding: 15px;
+  margin: 0;
+  color: #666;
+}
+
+.show-details-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #0ef;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet;
+}
+
+.show-details-btn:hover {
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet, 0 0 50px blueviolet, 0 0 100px blueviolet, 0 0 200px blueviolet;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  position: relative;
+  margin: 15% auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  color: #fff;
   cursor: pointer;
 }
-.row img {
-  width: 100%;
-  border-radius: 8px;
+
+.close:hover {
+  color: #ccc;
+}
+
+.modal-content img {
+  width: 80%;
+  max-width: 100%;
   display: block;
-  transition: transform 0.5s;
-}
-.layer {
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
-  position: absolute;
+  margin: 0 auto 15px;
   border-radius: 8px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 40px;
-  transition: height 0.5s;
 }
-.layer h5 {
-  color: #000;
-  font-size: 20px;
+
+.tag {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.html { background-color: #e34c26; color: white; }
+.css { background-color: #1572b6; color: white; }
+.javascript { background-color: #f7df1e; color: black; }
+.react { background-color: #61dafb; color: black; }
+.nodejs { background-color: #68a063; color: white; }
+.typescript { background-color: #007acc; color: white; }
+.data { background-color: #336791; color: white; }
+.postgresql { background-color: #336791; color: white; }
+.mongodb { background-color: #4db33d; color: black; }
+.git { background-color: #f05032; color: white; }
+.github { background-color: #181717; color: white; }
+.gitlab { background-color: #fc6d26; color: white; }
+.java { background-color: #007396; color: white; }
+
+.btn-box-modal {
+  display: inline-block;
+  padding: 20px 28px; 
+  background: transparent;
+  margin: 5px;
+  border-radius: 10px; 
+  font-size: 16px;
+  color: #0ef;
+  letter-spacing: 1px;
+  text-decoration: none;
   font-weight: 600;
-  margin-bottom: 15px;
-}
-.layer p {
-  color: #000;
-  font-size: 1rem;
-  line-height: 1.8;
-}
-.layer i {
-  color: #ff004f;
-  margin-top: 20px;
-  font-size: 20px;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet;
 }
-.row:hover img{
-  transform: scale(1.1);
+
+.btn-box-modal:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
-.row:hover .layer{
-  height: 100%;
-}
+
+
 
 
 /* CONTATO */
@@ -584,7 +691,7 @@ input:checked + .slider:before {
 }
 .contact-list i {
   display: inline-block;
-  color:#0ef;
+  color:blueviolet;
   font-size: 20px;
   font-weight: 600;
   transition: all .40s ease;
@@ -600,7 +707,7 @@ input:checked + .slider:before {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid blueviolet;
   border-radius: 50%;
   font-size: 20px;
   color: #0ef;
@@ -672,7 +779,7 @@ input:checked + .slider:before {
 }
 .top i {
   color: #000;
-  background-color: #0ef;
+  background-color: blueviolet;
   font-size: 20px;
   padding: 10px;
   border-radius: 0.5rem;

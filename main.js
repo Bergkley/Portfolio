@@ -88,23 +88,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Seleciona os botões de filtro
+// filtro do botão
 const filterButtons = document.querySelectorAll('.filter-btn');
-// Seleciona a lista de skills
 const skillsList = document.querySelector('.skills-list');
-
-// Adiciona evento de clique para cada botão de filtro
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const filterValue = button.getAttribute('data-filter');
 
-        // Mostra todos os skills
         if (filterValue === 'all') {
             document.querySelectorAll('.skill').forEach(skill => {
                 skill.style.display = 'block';
             });
         } else {
-            // Esconde todos os skills e mostra apenas os que correspondem ao filtro
             document.querySelectorAll('.skill').forEach(skill => {
                 skill.style.display = 'none';
             });
@@ -112,6 +107,47 @@ filterButtons.forEach(button => {
                 skill.style.display = 'block';
             });
         }
+    });
+});
+
+const filterButton = document.querySelectorAll('.filter-btn');
+
+filterButton.forEach(button => {
+    button.addEventListener('click', function() {
+        filterButton.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
+
+
+// MODAL
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.show-details-btn');
+    const modals = document.querySelectorAll('.modal');
+    const closeButton = document.querySelectorAll('.close');
+
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            modals[index].style.display = 'block';
+        });
+    });
+
+    closeButton.forEach((button) => {
+        button.addEventListener('click', () => {
+            modals.forEach((modal) => {
+                modal.style.display = 'none';
+            });
+        });
+    });
+
+    window.addEventListener('click', (event) => {
+        modals.forEach((modal) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
     });
 });
 

@@ -46,10 +46,7 @@
                 <a href="#" class="btn-box"><i class='bx bxl-github' style="color: blueviolet;"></i> GitHub</a>
                 <span style="margin: 0 10px;"></span> 
                 <a href="#" class="btn-box"><i class='bx bxl-linkedin-square' style="color: blueviolet;" ></i> LinkedIn</a>
-            </div>
-
-            
-           
+            </div>          
         </div>
         <span class="home-imgHouver"></span>
     </section>
@@ -115,7 +112,7 @@
     </section>
     <h1 class="sub-title" id="skill">My <span>Skills</span></h1>
     <div class="heading1">
-        <button class="filter-btn" data-filter="all">TODOS</button>
+        <button class="filter-btn active" data-filter="all">TODOS</button>
         <button class="filter-btn" data-filter="backend">BACK-END</button>
         <button class="filter-btn" data-filter="frontend">FRONT-END</button>
         <button class="filter-btn" data-filter="personal">HABILIDADE PESSOAL</button>
@@ -342,39 +339,190 @@
     <section>
         <div id="portfolio">
             <div class="main-text" id="project">
-                <h2>Latest <span>Project</span></h2>
-
-                <div class="portfolio-content" >
-                    <div class="row">
-                        <img src="image/5757453.jpg">
-                        <div class="layer">
-                            <h5>UI/UX Design</h5>
-                            <p>Creativity Creativity Creativity Creativity Creativity Creativity Creativity Creativity Creativity</p>
-                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-
-                        </div>
+                <h2>Latest <span>Projects</span></h2>
+                <div class="portfolio-content">
+                    <div class="card">
+                        <img src="image/5757453.jpg" alt="Project 1">
+                        <hr>
+                        <p>Descrição do projeto 1...</p>
+                        <button class="show-details-btn" data-modal="modal1">Mais informações</button>
                     </div>
-                    <div class="row">
-                        <img src="image/5467393_1687.jpg" alt="">
-                        <div class="layer">
-                            <h5>UI/UX Design</h5>
-                            <p>Creativity Creativity Creativity Creativity Creativity Creativity Creativity Creativity Creativity</p>
-                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-
-                        </div>
+                    <div class="card">
+                        <img src="image/5467393_1687.jpg" alt="Project 2">
+                        <hr>
+                        <p>Descrição do projeto 2...</p>
+                        <button class="show-details-btn" data-modal="modal2">Mais informações</button>
                     </div>
-                    <div class="row">
-                        <img src="image/4174812.jpg" alt="">
-                        <div class="layer">
-                            <h5>UI/UX Design</h5>
-                            <p>Creativity Creativity Creativity Creativity Creativity Creativity Creativity Creativity Creativity</p>
-                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-
-                        </div>
+                    <div class="card">
+                        <img src="image/4174812.jpg" alt="Project 3">
+                        <hr>
+                        <p>Descrição do projeto 3...</p>
+                        <button class="show-details-btn" data-modal="modal3">Mais informações</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Project 1</h2>
+            <img src="image/5757453.jpg" alt="Project 1">
+            <a href="#" class="btn-box-modal"><i class='bx bxl-github' style="color: blueviolet;"></i> GitHub</a>
+            <hr class="small-hr">
+
+            <!-- Descrição -->
+            <h4 style="margin-top: 1%;">Descrição</h4>
+            <p style="text-align: justify; text-align-last: center;">
+                Aplicação Web Responsiva Full Stack de E-Commerce B2B (Business-to-Business). O projeto foi estruturado para fornecer visões e funcionalidades distintas para cada tipo de usuário.
+            
+                O administrador (Organização Atacadista) têm acesso a recursos avançados de gerenciamento (cadastro de promoções, produtos, transportadoras, etc) e é ele que vende os produtos para os usuários comuns (Organizações Compradoras), enquanto os usuários comuns desfrutam de uma experiência de navegação e visualização simplificados.
+            
+                O sistema contém 41 páginas diferentes (urls) e 71 rotas de acesso a API (endpoints), todas desenvolvidas manualmente!
+            </p>
+            
+    
+            <!-- Recursos -->
+            <hr class="small-hr">
+            <h4>Recursos</h4>
+            <ul>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+            </ul>
+    
+            <hr class="small-hr">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="tags">
+                <span class="tag html"><i class='bx bxl-html5'></i> HTML5</span>
+                <span class="tag css"><i class='bx bxl-css3'></i> CSS3</span>
+                <span class="tag javascript"><i class='bx bxl-javascript'></i> JavaScript</span>
+                <span class="tag react"><i class='bx bxl-react'></i> React</span>
+                <span class="tag nodejs"><i class='bx bxl-nodejs'></i> Node.js</span>
+                <span class="tag typescript"><i class='bx bxl-typescript'></i> TypeScript</span>
+                <span class="tag data"><i class='bx bxl-data'></i> Data</span>
+                <span class="tag postgresql"><i class='bx bxl-postgresql'></i> PostgreSQL</span>
+                <span class="tag mongodb"><i class='bx bxl-mongodb'></i> MongoDB</span>
+                <span class="tag git"><i class='bx bxl-git'></i> Git</span>
+                <span class="tag github"><i class='bx bxl-github'></i> GitHub</span>
+                <span class="tag gitlab"><i class='bx bxl-gitlab'></i> GitLab</span>
+                <span class="tag java"><i class='bx bxl-java'></i> Java</span>
+            </div>
+    
+            <a href="#">Link para o projeto</a>
+        </div>
+    </div>
+    
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Project 1</h2>
+        <img src="image/5757453.jpg" alt="Project 1">
+        <a href="#" class="btn-box-modal"><i class='bx bxl-github' style="color: blueviolet;"></i> GitHub</a>
+        <hr class="small-hr">
+
+        <!-- Descrição -->
+        <h4>Descrição</h4>
+        <p style="text-align: justify; text-align-last: center;">
+            Aplicação Web Responsiva Full Stack de E-Commerce B2B (Business-to-Business). O projeto foi estruturado para fornecer visões e funcionalidades distintas para cada tipo de usuário.
+        
+            O administrador (Organização Atacadista) têm acesso a recursos avançados de gerenciamento (cadastro de promoções, produtos, transportadoras, etc) e é ele que vende os produtos para os usuários comuns (Organizações Compradoras), enquanto os usuários comuns desfrutam de uma experiência de navegação e visualização simplificados.
+        
+            O sistema contém 41 páginas diferentes (urls) e 71 rotas de acesso a API (endpoints), todas desenvolvidas manualmente!
+        </p>
+        
+
+        <!-- Recursos -->
+        <hr class="small-hr">
+        <h4>Recursos</h4>
+        <ul>
+            <li>Texto</li>
+            <li>Texto</li>
+            <li>Texto</li>
+            <li>Texto</li>
+        </ul>
+
+        <hr class="small-hr">
+        <h4>Tecnologias Utilizadas</h4>
+        <div class="tags">
+            <span class="tag html"><i class='bx bxl-html5'></i> HTML5</span>
+            <span class="tag css"><i class='bx bxl-css3'></i> CSS3</span>
+            <span class="tag javascript"><i class='bx bxl-javascript'></i> JavaScript</span>
+            <span class="tag react"><i class='bx bxl-react'></i> React</span>
+            <span class="tag nodejs"><i class='bx bxl-nodejs'></i> Node.js</span>
+            <span class="tag typescript"><i class='bx bxl-typescript'></i> TypeScript</span>
+            <span class="tag data"><i class='bx bxl-data'></i> Data</span>
+            <span class="tag postgresql"><i class='bx bxl-postgresql'></i> PostgreSQL</span>
+            <span class="tag mongodb"><i class='bx bxl-mongodb'></i> MongoDB</span>
+            <span class="tag git"><i class='bx bxl-git'></i> Git</span>
+            <span class="tag github"><i class='bx bxl-github'></i> GitHub</span>
+            <span class="tag gitlab"><i class='bx bxl-gitlab'></i> GitLab</span>
+            <span class="tag java"><i class='bx bxl-java'></i> Java</span>
+        </div>
+
+        <a href="#">Link para o projeto</a>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Project 1</h2>
+        <img src="image/4174812.jpg" alt="Project 1">
+        <a href="#" class="btn-box-modal"><i class='bx bxl-github' style="color: blueviolet;"></i> GitHub</a>
+        <hr class="small-hr">
+
+        <!-- Descrição -->
+        <h4 style="margin-top: 1%;">Descrição</h4>
+        <p style="text-align: justify; text-align-last: center;">
+            Aplicação Web Responsiva Full Stack de E-Commerce B2B (Business-to-Business). O projeto foi estruturado para fornecer visões e funcionalidades distintas para cada tipo de usuário.
+        
+            O administrador (Organização Atacadista) têm acesso a recursos avançados de gerenciamento (cadastro de promoções, produtos, transportadoras, etc) e é ele que vende os produtos para os usuários comuns (Organizações Compradoras), enquanto os usuários comuns desfrutam de uma experiência de navegação e visualização simplificados.
+        
+            O sistema contém 41 páginas diferentes (urls) e 71 rotas de acesso a API (endpoints), todas desenvolvidas manualmente!
+        </p>
+        
+
+        <!-- Recursos -->
+        <hr class="small-hr">
+        <h4>Recursos</h4>
+        <ul>
+            <li>Texto</li>
+            <li>Texto</li>
+            <li>Texto</li>
+            <li>Texto</li>
+        </ul>
+
+        <hr class="small-hr">
+        <h4>Tecnologias Utilizadas</h4>
+        <div class="tags">
+            <span class="tag html"><i class='bx bxl-html5'></i> HTML5</span>
+            <span class="tag css"><i class='bx bxl-css3'></i> CSS3</span>
+            <span class="tag javascript"><i class='bx bxl-javascript'></i> JavaScript</span>
+            <span class="tag react"><i class='bx bxl-react'></i> React</span>
+            <span class="tag nodejs"><i class='bx bxl-nodejs'></i> Node.js</span>
+            <span class="tag typescript"><i class='bx bxl-typescript'></i> TypeScript</span>
+            <span class="tag data"><i class='bx bxl-data'></i> Data</span>
+            <span class="tag postgresql"><i class='bx bxl-postgresql'></i> PostgreSQL</span>
+            <span class="tag mongodb"><i class='bx bxl-mongodb'></i> MongoDB</span>
+            <span class="tag git"><i class='bx bxl-git'></i> Git</span>
+            <span class="tag github"><i class='bx bxl-github'></i> GitHub</span>
+            <span class="tag gitlab"><i class='bx bxl-gitlab'></i> GitLab</span>
+            <span class="tag java"><i class='bx bxl-java'></i> Java</span>
+        </div>
+
+        <a href="#">Link para o projeto</a>
+    </div>
+</div>
+
+    
+
 
     <section class="contact" id="contact">
         <div class="contact-text">
