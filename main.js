@@ -88,6 +88,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Seleciona os botões de filtro
+const filterButtons = document.querySelectorAll('.filter-btn');
+// Seleciona a lista de skills
+const skillsList = document.querySelector('.skills-list');
+
+// Adiciona evento de clique para cada botão de filtro
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filterValue = button.getAttribute('data-filter');
+
+        // Mostra todos os skills
+        if (filterValue === 'all') {
+            document.querySelectorAll('.skill').forEach(skill => {
+                skill.style.display = 'block';
+            });
+        } else {
+            // Esconde todos os skills e mostra apenas os que correspondem ao filtro
+            document.querySelectorAll('.skill').forEach(skill => {
+                skill.style.display = 'none';
+            });
+            document.querySelectorAll(`.skill[data-category="${filterValue}"]`).forEach(skill => {
+                skill.style.display = 'block';
+            });
+        }
+    });
+});
+
 
 
 
