@@ -340,20 +340,25 @@
         <div id="portfolio">
             <div class="main-text" id="project">
                 <h2>Latest <span>Projects</span></h2>
+                <div id="portfolio-buttons" class="collapse-buttons">
+                    <button class="portfolio-filter-btn active" data-filter="all">TODOS</button>
+                    <button class="portfolio-filter-btn" data-filter="backend">BACK-END</button>
+                    <button class="portfolio-filter-btn" data-filter="frontend">FRONT-END</button>
+                </div>
                 <div class="portfolio-content">
-                    <div class="card">
+                    <div class="card" data-category="backend">
                         <img src="image/5757453.jpg" alt="Project 1">
                         <hr>
                         <p>Descrição do projeto 1...</p>
                         <button class="show-details-btn" data-modal="modal1">Mais informações</button>
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="frontend">
                         <img src="image/5467393_1687.jpg" alt="Project 2">
                         <hr>
                         <p>Descrição do projeto 2...</p>
                         <button class="show-details-btn" data-modal="modal2">Mais informações</button>
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="frontend">
                         <img src="image/4174812.jpg" alt="Project 3">
                         <hr>
                         <p>Descrição do projeto 3...</p>
@@ -363,6 +368,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- Modal 1 -->
     <div id="modal1" class="modal">

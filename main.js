@@ -152,5 +152,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// FILTRO DO PROJETOS
+
+document.addEventListener("DOMContentLoaded", function() {
+    function handleFilterButtonClick(buttonsClass, cardsClass, defaultFilter) {
+        const filterButtons = document.querySelectorAll(buttonsClass);
+        const cards = document.querySelectorAll(cardsClass);
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const filter = this.getAttribute("data-filter");
+
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                // Add active class to clicked button
+                this.classList.add("active");
+
+                cards.forEach(card => {
+                    if (filter === "all" || card.getAttribute("data-category") === filter) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        document.querySelector(buttonsClass + `[data-filter='${defaultFilter}']`).click();
+    }
+
+    handleFilterButtonClick(".portfolio-filter-btn", ".portfolio-content .card", "all");
+
+    handleFilterButtonClick(".skills-filter-btn", ".skills-content .skill", "all");
+});
+
+
+
+
 
 

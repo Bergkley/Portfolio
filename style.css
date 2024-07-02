@@ -497,7 +497,7 @@ input:checked + .slider:before {
   font-size: 60px;
   line-height: 1;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .main-text h2 span {
@@ -644,6 +644,36 @@ input:checked + .slider:before {
 .btn-box-modal:hover {
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
+
+.collapse-buttons {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.portfolio-filter-btn {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 2px solid #1572b6; 
+  background-color:transparent; 
+  color: #0ef;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px blueviolet,
+        0 0 25px blueviolet;
+}
+
+.portfolio-filter-btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+.portfolio-filter-btn.active {
+  background-color: white;
+  color: #000;
+}
+
+
 
 
 
