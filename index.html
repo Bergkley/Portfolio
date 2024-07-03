@@ -14,15 +14,15 @@
 <body>
     <header class="header">
         <a href="index.html" class="logo"><span style="color: blueviolet;">< </span>Bergkley <span style="color: blueviolet;">/></span></a>
-
+    
         <nav class="navbar">
-            <a href="#home" style="--i:1" class="active"><i class='bx bx-home'></i>Home</a>
-            <a href="#about" style="--i:2" ><i class='bx bx-user'></i>About</a>
-            <a href="#services" style="--i:3" >Services</a>
-            <a href="#skill" style="--i:3" >Skill</a>
-            <a href="#portfolio" style="--i:4" ><i class='bx bx-grid-alt'></i>Portfolio</a>
-            <a href="#contact" style="--i:5" ><i class='bx bx-comment'></i>Contact</a>
-            <a href="#" style="--i:6" >|</a>
+            <a href="#home" style="--i:1" class="active"><i class='bx bx-home'></i>Página Inicial</a>
+            <a href="#about" style="--i:2"><i class='bx bx-user'></i>Sobre</a>
+            <a href="#services" style="--i:3"><i class='bx bxs-briefcase' ></i>Serviços</a>
+            <a href="#skill" style="--i:3"><i class='bx bxs-bulb'></i>Habilidades</a>
+            <a href="#portfolio" style="--i:4"><i class='bx bx-grid-alt'></i>Portfolio</a>
+            <a href="#contact" style="--i:5"><i class='bx bx-comment'></i>Contato</a>
+            <a href="#" style="--i:6">|</a>
             <label class="mode-color">
                 <input type="checkbox" id="theme-toggle">
                 <span class="slider round">
@@ -31,9 +31,20 @@
                 </span>
             </label>
             
+            <div class="dropdown">
+                <button class="dropbtn" id="current-language"><img src="image/brasil.png" alt="Português (Brasil)" class="flag-icon"> Português (Brasil)</button>
+                <div class="dropdown-content">
+                    <a href="index.html" id="pt-br"><img src="image/brasil.png" alt="Português (Brasil)" class="flag-icon"> Português (Brasil)</a>
+                    <a href="indexUs.html" id="en"><img src="image/estados-unidos.png" alt="English" class="flag-icon"> English</a>
+                    <a href="indexEs.html" id="es"><img src="image/espanha.png" alt="Español" class="flag-icon"> Español</a>
+                </div>
+            </div>
         </nav>
-        
     </header>
+    
+    
+    
+    
     <section class="home" id="home">
         <div class="home-content">
             <h3>Olá, me chamo👋</h3>
@@ -46,9 +57,9 @@
             
             
             <div style="margin-top: 50px;">
-                <a href="#" class="btn-box"><i class='bx bxl-github' style="color: blueviolet;"></i> GitHub</a>
+                <a href="https://github.com/Bergkley" target="_blank" class="btn-box"><i class='bx bxl-github' style="color: blueviolet;"></i> GitHub</a>
                 <span style="margin: 0 10px;"></span> 
-                <a href="#" class="btn-box"><i class='bx bxl-linkedin-square' style="color: blueviolet;" ></i> LinkedIn</a>
+                <a href="https://br.linkedin.com/in/bergkley-ferreira-brasil-008680245" target="_blank" class="btn-box"><i class='bx bxl-linkedin-square' style="color: blueviolet;" ></i> LinkedIn</a>
             </div>          
         </div>
         <img src="image/output-onlinegiftools.gif"  id="gif" alt="Descrição da GIF">
@@ -99,31 +110,29 @@
     <section>
         <div class="services" id="services">
             <div class="container">
-                <h1 class="sub-title">My <span>Services</span></h1>
+                <h1 class="sub-title">Meus <span>Serviços</span></h1>
                 <div class="services-list">
                     <div>
-                        <i class='bx bx-code' style='color:#00eeff'  ></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Uma boa produção de texto envolve objetivos definidos, bem como o assunto a ser abordado e a modalidade textual escolhida. Algumas dicas que ajudam na produção de texto são: conhecimento das regras gramaticais, </p>
-                        <a href="#" class="read">lern more</a>
+                        <i class='bx bx-code' style='color:#00eeff'></i>
+                        <h2>DESENVOLVEDOR FRONT-END</h2>
+                        <p>Como desenvolvedor front-end, é fundamental transformar o design em uma interface interativa e funcional. Utilizo tecnologias como HTML, CSS ,JavaScript e React para criar experiências de usuário responsivas e acessíveis. Minha missão é garantir que cada elemento visual de um site ou aplicativo funcione de maneira eficiente e atraente.</p>
+                        
                     </div>
                     <div>
-                        <i class='bx bx-crop' style='color:#00eeff'></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Uma boa produção de texto envolve objetivos definidos, bem como o assunto a ser abordado e a modalidade textual escolhida. Algumas dicas que ajudam na produção de texto são: conhecimento das regras gramaticais, </p>
-                        <a href="#" class="read">lern more</a>
+                        <i class='bx bxs-component' style='color:#00eeff'></i>
+                        <h2>ANALISTA DE SISTEMAS</h2>
+                        <p>Como analista de sistemas, meu papel é analisar e desenvolver soluções tecnológicas que atendam às necessidades do negócio. Envolvo-me na modelagem de dados, análise de requisitos e design de sistemas, sempre buscando otimizar processos e garantir a eficiência dos sistemas implantados.</p>
                     </div>
                     <div>
-                        <i class='bx bxl-apple' style='color:#00eeff'></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Uma boa produção de texto envolve objetivos definidos, bem como o assunto a ser abordado e a modalidade textual escolhida. Algumas dicas que ajudam na produção de texto são: conhecimento das regras gramaticais, </p>
-                        <a href="#" class="read">lern more</a>
-                    </div>
+                        <i class='bx bx-server' style='color:#00eeff'></i>
+                        <h2>DESENVOLVEDOR BACK-END</h2>
+                        <p>Como desenvolvedor back-end, sou responsável pela lógica do servidor e pela integração de banco de dados. Utilizo frameworks como NodeJs para construir APIs robustas e seguras, garantindo que os dados fluam de maneira eficaz entre o servidor e o usuário final.</p>
+                    </div>                    
                 </div>
             </div>
         </div>
     </section>
-    <h1 class="sub-title" id="skill">My <span>Skills</span></h1>
+    <h1 class="sub-title" id="skill">Minhas <span>Habilidades</span></h1>
     <div class="heading1">
         <button class="filter-btn active" data-filter="all">TODOS</button>
         <button class="filter-btn" data-filter="backend">BACK-END</button>
@@ -352,7 +361,7 @@
     <section>
         <div id="portfolio">
             <div class="main-text" id="project">
-                <h2>Latest <span>Projects</span></h2>
+                <h2>Meus <span>Projetos</span></h2>
                 <div id="portfolio-buttons" class="collapse-buttons">
                     <button class="portfolio-filter-btn active" data-filter="all">TODOS</button>
                     <button class="portfolio-filter-btn" data-filter="backend">BACK-END</button>
@@ -474,30 +483,27 @@
 
     <section class="contact" id="contact">
         <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Let's work together</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>Contate <span>Me</span></h2>
             <div class="contact-list">
-                <li><i class='bx bxs-send'></i>contact@gmail.com</li>
-                <li><i class='bx bxs-phone'></i>0123456789</li>
+                <li><i class='bx bxs-send'></i>bergkley@gmail.com</li>
+                <li><i class='bx bxs-phone'></i>+55(85) 98644-2147</li>
             </div>
             <div class="contact-icons">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Bergkley" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/bergkley?igsh=MWk2ZTE4a2FyeTczZA%3D%3D" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://br.linkedin.com/in/bergkley-ferreira-brasil-008680245" target="_blank"><i class='bx bxl-linkedin'></i></a>
             </div>
         </div>
 
 
         <div class="contact-form" >
             <form action="">
-                <input type="" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
+                <input type="" placeholder="Digite seu nome" required>
+                <input type="email" placeholder="Digite seu e-mail" required>
 
-                <input type="" placeholder="Enter Your SubJect">
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                <input type="submit" value="submit" class="send">
+                <input type="" placeholder="Digite seu assunto                ">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <input type="submit" value="enviar" class="send">
             </form>
         </div>
     </section>

@@ -188,4 +188,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// LINGUAGENS
+
+const languageOptions = {
+    'pt-br': { text: 'Português (Brasil)', icon: 'image/brasil.png' },
+    'en': { text: 'English', icon: 'image/estados-unidos.png' },
+    'es': { text: 'Español', icon: 'image/espanha.png' }
+};
+
+
+
+document.querySelectorAll('.dropdown-content a').forEach(item => {
+    item.addEventListener('click', function() {
+        const selectedId = this.id;
+        const selectedLanguage = languageOptions[selectedId];
+        
+        document.getElementById('current-language').innerHTML = `<img src="${selectedLanguage.icon}" alt="${selectedLanguage.text}" class="flag-icon"> ${selectedLanguage.text}`;
+        
+        // Redireciona para a página correta
+        window.location.href = selectedLanguage.href;
+    });
+});
+
+
+
 
