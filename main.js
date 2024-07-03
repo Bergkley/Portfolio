@@ -163,9 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
             button.addEventListener("click", function() {
                 const filter = this.getAttribute("data-filter");
 
-                // Remove active class from all buttons
                 filterButtons.forEach(btn => btn.classList.remove("active"));
-                // Add active class to clicked button
                 this.classList.add("active");
 
                 cards.forEach(card => {

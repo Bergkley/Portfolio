@@ -162,14 +162,13 @@ input:checked + .slider:before {
   right: 8px; 
 }
 
+
 /* HOME */
 .home {
   position: relative;
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url()
-    no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
@@ -178,6 +177,7 @@ input:checked + .slider:before {
 .home-content {
   max-width: 600px;
 }
+
 .home-content h3 {
   font-size: 32px;
   font-weight: 700;
@@ -252,6 +252,8 @@ input:checked + .slider:before {
 }
 
 
+
+
 /* SOBRE */
 
 .about {
@@ -262,10 +264,12 @@ input:checked + .slider:before {
 }
 .about-img img {
    padding-bottom: 20%;
-   max-width: 630px;
+   max-width: 530px;
+   margin-top: 15%;
    height: auto;
    width: 100%;
    border-radius: 8px;
+   margin-left: 1%;
 }
 .about-text h2{
     font-size: 60px;
@@ -277,12 +281,10 @@ input:checked + .slider:before {
 .about-text h4{
     font-size: 29px;
     font-weight: 600;
-    color:#efff;
     line-height: 1.7;
     margin:15px 0 30px;
 }
 .about-text p {
-    color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -314,7 +316,6 @@ input:checked + .slider:before {
 /* My Services */
 
 #services{
-  color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
@@ -534,7 +535,8 @@ input:checked + .slider:before {
 .card p {
   padding: 15px;
   margin: 0;
-  color: #666;
+  font-weight: bolder;
+  
 }
 
 .show-details-btn {
@@ -574,6 +576,7 @@ input:checked + .slider:before {
   margin: 15% auto;
   padding: 20px;
   background-color: #1f1f1f;
+  color: #f0f0f0;
   border-radius: 8px;
   max-width: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -674,10 +677,6 @@ input:checked + .slider:before {
 }
 
 
-
-
-
-
 /* CONTATO */
 
 .contact {
@@ -698,12 +697,10 @@ input:checked + .slider:before {
 }
 .contact-text h4 {
   margin: 15px 0;
-  color: rgb(220,228,288) ;
   font-size: 20px;
   font-weight: 600;
 }
 .contact-text p {
-  color: rgb(177,177,177);
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 2rem;
@@ -902,6 +899,9 @@ input:checked + .slider:before {
 @media (max-width: 480px) {
   .header {
     padding: 20px 3%;
+  }
+  #gif{
+    height: 30%;
   }
 
   .navbar a {
