@@ -684,6 +684,7 @@ input:checked + .slider:before {
   padding: 20px 28px; 
   background: transparent;
   margin: 5px;
+  margin-top: 5%;
   border-radius: 10px; 
   font-size: 16px;
   color: #0ef;
@@ -728,6 +729,29 @@ input:checked + .slider:before {
   background-color: white;
   color: #000;
 }
+
+.show-more-btn {
+  padding: 20px 20px;
+  margin: 0 auto; /* Isso centraliza horizontalmente */
+  border: 2px solid #1572b6;
+  background-color: transparent;
+  color: #0ef;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 3%;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet;
+  
+  display: flex; /* Usando flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.show-more-btn:hover {
+  background-color: white;
+  color: #000;
+}
+
 
 
 /* CONTATO */
@@ -851,6 +875,7 @@ input:checked + .slider:before {
   background: rgb(7,85,91);
   font-weight: 300;
   margin-top: 70px;
+  font-weight: bolder;
 }
 .top{
   position: fixed;
@@ -1009,6 +1034,26 @@ input:checked + .slider:before {
 
   .contact-text p {
     font-size: 16px;
+  }
+  .skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+
+
+  }
+  #filter-btn-HabilidadesPessoais{
+    margin-top: 5%;
+  }
+  .btn-box{
+    margin: 3%;
+  }
+  #btn-backend-frontend{
+    display: inline-block;
+  }
+  .card{
+    margin:3%;
   }
 }
 
